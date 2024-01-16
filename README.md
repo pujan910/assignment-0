@@ -1,4 +1,4 @@
-# CS425 - Computer Graphics I (Spring 2022)
+# CS425 - Computer Graphics I
 
 ## Assignment 0: Introduction to JavaScript and WebGL
 The goal of this first assignment is to get you familiar with JavaScript, WebGL calls, development environment, and the assignment submission process. You will develop a web application to render triangles with vertex position and colors defined in an external JSON file, specified by the user through a configuration panel.
