@@ -27,7 +27,7 @@ Connect the elements of the configuration panel and a WebGL canvas. The first th
 The application should contain a file [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file) element responsible for loading a JSON file. This JSON file will contain vertex position and color information for all n triangles. You should load this JSON file, [parse it](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) and use the data to fill one (or two) buffer arrays. The JSON will be in the following format:
 
 ```
-{"positions": [x_1,y_1,z_1,x_2,y_2,z_2,...,x_n,y_n,z_n], "colors": [r_1,g_1,b_1,a_1,r_2,g_2,b_2,a_2,...,r_n,g_n,b_n,a_n]}}
+{"positions": [x_1,y_1,z_1,x_2,y_2,z_2,...,x_i,y_i,z_i], "colors": [r_1,g_1,b_1,a_1,r_2,g_2,b_2,a_2,...,r_i,g_i,b_i,a_i]}}
 ```
 
 You can download two complete examples in this repository (files [example.json](https://github.com/uic-cs425/assignment-0/blob/main/example.json) and [uic.json](https://github.com/uic-cs425/assignment-0/blob/main/uic.json)). In order to read the file uploaded by the user, use the [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) object, and the [onload](https://developer.mozilla.org/en-US/docs/Web/API/FileReader/onload) event handler. If by any chance a file not following the specified format is loaded, then the application should display an [alert](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert).
