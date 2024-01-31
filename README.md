@@ -21,7 +21,7 @@ Create a configuration panel with six elements:
 You are free to choose the layout and color of the configuration panel elements.
 
 #### Task 2
-Connect the elements of the configuration panel and a WebGL canvas. The first three sliders should change the **background RGB color**, and the fourth slider should change the **number of triangles being rendered** (between 1 and n). The file input button should allow the users to load a JSON file; after loaded, the previous slider should be updated so that its range go from 1 to n (number of triangles in the new file). The checkbox element should toggle between two modes: 1) triangle color specified by the configuration panel, and 2) triangle color specified by loaded JSON file.
+Connect the elements of the configuration panel and a WebGL canvas. The fourth slider should change the **number of triangles being rendered** (between 1 and n). The file input button should allow the users to load a JSON file; after loaded, the previous slider should be updated so that its range go from 1 to n (number of triangles in the new file). The checkbox element should toggle between two modes: 1) triangle color specified by the configuration panel (first three sliders), and 2) triangle color specified by loaded JSON file.
 
 #### Task 3
 The application should contain a file [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file) element responsible for loading a JSON file. This JSON file will contain vertex position and color information for all n triangles. You should load this JSON file, [parse it](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) and use the data to fill one (or two) buffer arrays. The JSON will be in the following format:
