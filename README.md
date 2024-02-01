@@ -11,6 +11,12 @@ If you want, you can use the [generate.ipynb](https://github.com/uic-cs425/assig
 
 ### Tasks
 
+#### Task 0
+You should set up a local testing server. There are several ways to achieve that but, for the purposes of this assignment, the most straightforward one is to simply use Python's HTTP servers (see [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server) for details). In the folder where you will store your code, type in the command line:
+``python -m http.server``.
+
+That will serve all files in your folder through the address 0.0.0.0:8000 . Open the address in a browser and you will be able to see the served files.
+
 #### Task 1
 Create a configuration panel with six elements:
 1) Three [sliders](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range) with values between 0 and 255.
