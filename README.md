@@ -3,7 +3,7 @@
 ## Assignment 0: Introduction to JavaScript and WebGL
 The goal of this first assignment is to get you familiar with JavaScript, WebGL calls, development environment, and the assignment submission process. You will develop a web application to render triangles with vertex position and colors defined in an external JSON file, specified by the user through a configuration panel.
 
-There are four tasks, and you are free to re-use any code from the labs (check discord for links).
+There are five tasks, and you are free to re-use any code from the labs (check Piazza for links).
 
 If you want, you can use the [generate.ipynb](https://github.com/uic-cs425/assignment-0/blob/main/generate.ipynb) Jupyter file to generate your own triangle mesh from an image file:
 
