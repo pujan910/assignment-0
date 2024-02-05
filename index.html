@@ -1,4 +1,3 @@
-<!-- 
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,43 +5,18 @@
     <title>CS 425 Assignment 0</title>
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="style.css">
-    <script src="assignment0.js" type=""></script>
-</head>
-<body>
-    <canvas id="canvas"></canvas>
-    <div id="config"><br>
-    </div>
-</body>
-</html>
- -->
-
- <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>CS 425 Assignment 0</title>
-    <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="style.css">
-    <script src="assignment0.js" type=""></script>
 </head>
 <body>
     <canvas id="canvas"></canvas>
     <div id="config">
         <br>
-        <label for="colorR">R:</label>
-        <input type="range" id="colorR" name="colorR" min="0" max="255" oninput="updateColor()">
-        <label for="colorG">G:</label>
-        <input type="range" id="colorG" name="colorG" min="0" max="255" oninput="updateColor()">
-        <label for="colorB">B:</label>
-        <input type="range" id="colorB" name="colorB" min="0" max="255" oninput="updateColor()">
-        <br>
-        <label for="trianglesSlider">Triangles:</label>
-        <input type="range" id="trianglesSlider" name="trianglesSlider" min="1" max="1" oninput="updateTriangles()"> <!-- Initial max is 1, update later -->
-        <br>
-        <input type="file" id="jsonFile" name="jsonFile" accept=".json" onchange="uploadFile(event)">
-        <br>
-        <label for="colorToggle">Toggle Colors:</label>
-        <input type="checkbox" id="colorToggle" name="colorToggle" onchange="checkBox()">
+        <label>R: <input type="range" id="sliderR" min="0" max="255" value="0"></label><br>
+        <label>G: <input type="range" id="sliderG" min="0" max="255" value="0"></label><br>
+        <label>B: <input type="range" id="sliderB" min="0" max="255" value="0"></label><br>
+        <label>Number of Triangles: <input type="range" id="sliderN" min="1" max="1" value="1"></label><br>
+        <input type="file" id="jsonInput"><br>
+        <label><input type="checkbox" id="colorToggle"> Use JSON Colors</label>
     </div>
+    <script src="assignment0.js" type="module"></script>
 </body>
 </html>
